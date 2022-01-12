@@ -21,5 +21,20 @@ public class Demo3 {
     int age = (int)3.2;
     // この場合強制的に型変換を行うため小数点以下が切り捨てられる情報の欠損が起こる
     System.out.println(age);
+
+    // コード2-8　異なる型同士の算術演算
+    double d2 = 8.5 / 2;
+    long l = 5 + 2L;
+    System.out.println(d2);
+    System.out.println(l);
+    
+    // コード2-9　文字列の連結
+    String msg = "私の年齢は" + 23;
+    System.out.println(msg);
+    
+    // コード2-10 命令実行文
+    String name = "須賀";
+    String message = name + "さん、こんにちは";
+    System.out.println(message);
   }
 }
