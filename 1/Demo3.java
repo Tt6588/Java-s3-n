@@ -53,7 +53,7 @@ public class Demo3 {
     // コード2-13 String型をint型に変換する命令
     String age13 = "31";
     int n13 = Integer.parseInt(age13);
-    System.out.println("あなたは来年、" + (n+1) + "歳になりますね。");
+    System.out.println("あなたは来年、" + (n13+1) + "歳になりますね。");
     
     // コード2-14 ランダムな数を生成する命令
     int r14 = new java.util.Random().nextInt(90);
@@ -63,14 +63,27 @@ public class Demo3 {
     System.out.println("あなたの名前を入力してください。");
     int name15 = new java.util.Scanner(System.in).nextLine();
     System.out.println("あなたの年齢を入力してください。");
-    int age15 = new java.util.Scanner(system.in).nextInt();
+    int age15 = new java.util.Scanner(System.in).nextInt();
     System.out.println("ようこそ、" + age15 + "歳の" + name15 + "さん");
 
     // 練習問題2-1
     int x2-1 = 5;
     int y2-1 = 10;
-    // String ans = "x+yは" + x + y; =x+yは510 → =x+yは15 に修正する
+    // String ans = "x+yは" + x + y; は510 → は15 に修正する
     String ans = "x+yは" + (x+y);
     System.out.println(ans);
+
+    // 練習問題2-3
+    System.out.println("ようこそ占いの館へ");
+    System.out.println("あなたの名前を入力してください");
+    String name23 = new java.util.Scanner(System.in).nextLine();
+    System.out.println("あなたの年齢を入力してください");
+    String ageString = new java.util.Scanner(System.in).nextLine();
+    int age23 = Integer.parseInt(ageString);
+    int fortune = new java.util.Random().nextInt(4);
+    fortune++;
+    System.out.println("占いの結果が出ました");
+    System.out.println(age23 + "歳の" + name23 + "さん、あなたの運気番号は" + fortune + "です");
+    System.out.println("1:大吉　2:中吉　3:吉　4凶");
   }
 }
