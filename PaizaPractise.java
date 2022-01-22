@@ -18,5 +18,11 @@ public class PaizaPractise {
         int M = sc.nextInt();
         int X = N * M;
         System.out.println(X);
+
+      // D172:イヴの日付
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        N--;
+        System.out.println(N);
     }
 }
