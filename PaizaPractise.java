@@ -24,5 +24,12 @@ public class PaizaPractise {
         int N = sc.nextInt();
         N--;
         System.out.println(N);
+
+      // D189:何周年の確認
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        int z = y - x;
+        System.out.println(z);
     }
 }
