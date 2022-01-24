@@ -31,5 +31,18 @@ public class PaizaPractise {
         int y = sc.nextInt();
         int z = y - x;
         System.out.println(z);
+
+      // D162:【推しプロコラボ問題】お米の重さ
+        int N = new java.util.Scanner(System.in).nextInt();
+        int X = N * 150;
+        System.out.println(X);
+
+      // D182:燃費の計算
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int m = scanner.nextInt();
+        int x = n / m;
+        System.out.println(x);
+        scanner.close();
     }
 }
