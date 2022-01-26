@@ -44,5 +44,18 @@ public class PaizaPractise {
         int x = n / m;
         System.out.println(x);
         scanner.close();
+
+      // ----C----
+
+      // C084:【キャンペーン問題】枠で囲む
+        Scanner sc = new Scanner(System.in);
+        String S = sc.nextLine();
+        String N = "++";
+        for(int i = 0; i < S.length(); i++){
+            N = N + "+";
+        }
+        System.out.println(N);
+        System.out.println("+" + S + "+");
+        System.out.println(N);
     }
 }
