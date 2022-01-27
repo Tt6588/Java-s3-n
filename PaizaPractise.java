@@ -57,5 +57,15 @@ public class PaizaPractise {
         System.out.println(N);
         System.out.println("+" + S + "+");
         System.out.println(N);
+
+      // C020:残り物の量
+        Scanner sc = new Scanner(System.in);
+        int m = sc.nextInt();
+        int p = sc.nextInt();
+        int q = sc.nextInt();
+        double x1 = m -(m * (p * 0.01));
+        double x2 = ((double)Math.round(x1 * 100))/100;
+        double y = x2 -(x2 * (q * 0.01));
+        System.out.println(y);
     }
 }
