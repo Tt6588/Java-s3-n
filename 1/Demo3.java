@@ -85,5 +85,32 @@ public class Demo3 {
     System.out.println("占いの結果が出ました");
     System.out.println(age23 + "歳の" + name23 + "さん、あなたの運気番号は" + fortune + "です");
     System.out.println("1:大吉　2:中吉　3:吉　4凶");
+    
+    // 3-1 天気による行動の変化をjavaで表す
+    boolean tenki31 = true;
+    // boolean tenki31 = false;
+    if (tenki31 == true){
+      System.out.println("洗濯します");
+      System.out.println("散歩に行きます");
+    } else{
+      System.out.println("DVDを見ます");
+    }
+    
+    // 3-2 トイレの空きを待つ繰り返し処理
+    boolean doorClose32 = true;
+    // boolean doorClose32 = false;
+    while (doorClose32 == true){
+      System.out.println("ノックする");
+      System.out.println("1分待つ");
+    }
+
+    // 3-3 波カッコを省略した記述
+    boolean tenki33 = true;
+    // boolean tenki33 = false;
+    if (tenki33 == true){
+      System.out.println("洗濯します");
+      System.out.println("散歩に行きます");
+    } else //block内が1行なら波カッコ省略可能
+      System.out.println("DVDを見ます");
   }
 }
