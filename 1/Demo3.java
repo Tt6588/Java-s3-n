@@ -104,7 +104,7 @@ public class Demo3 {
       System.out.println("1分待つ");
     }
 
-    // 3-3 波カッコを省略した記述
+    // 3-3 波カッコを省略した記述 **省略は非推奨**
     boolean tenki33 = true;
     // boolean tenki33 = false;
     if (tenki33 == true){
@@ -112,5 +112,55 @@ public class Demo3 {
       System.out.println("散歩に行きます");
     } else //block内が1行なら波カッコ省略可能
       System.out.println("DVDを見ます");
+    
+    // 3-4 冗長でスッキリしないソースコード
+    System.out.println("あなたの運勢を占います");
+    int fortune34 = new java.util.Random().nextInt(4)+1;
+    if (fortune34 == 1){
+      System.out.println("大吉");
+      if (fortune34 == 2){
+        System.out.println("中吉");
+      }
+      if (fortune34 == 3){
+        System.out.println("吉");
+      }
+      if (fortune34 == 4){
+        System.out.println("凶");
+      }
+      
+    // 3-5 breakを書き忘れたコード
+    System.out.println("あなたの運勢を占います");
+    int fortune35 = 1;
+    switch (fortune35){
+      case 1:
+        System.out.println("大吉");
+        // break;   //sase2の内容まで表示されてしまう
+      case 2:
+        System.out.println("中吉");
+        break;
+      case 3:
+        System.out.println("吉");
+        break;
+      default:
+        System.out.println("凶");
+    }
+    
+    // 3-6 breakをあえて書かない
+    System.out.println("あなたの運勢を占います");
+    int fortune36 = new java.util.Random().nextInt(5)+1;
+    switch (fortune36){
+      case 1:
+        System.out.println("いいね");
+        break;
+      case 2:
+      case 3:
+        System.out.println("ふつう");
+        break;
+      case 4:
+        System.out.println("びみょう");
+        break;
+      case 5:
+        System.out.println("だめだこりゃ……");
+    }
   }
 }
