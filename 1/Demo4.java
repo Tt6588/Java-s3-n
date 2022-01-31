@@ -61,5 +61,64 @@ public class Demo4 {
     int avg410 = sum410 / scores410.length;
     System.out.println("合計点" + sum410);
     System.out.println("平均点" + avg410);
+    
+    // 4-11 50点以上の科目を調べる
+    int[] scores411 = {20, 30, 40, 50, 80};
+    int count411 = 0;
+    for (int i = 0; i < scores411.length; i++){
+      if (scores411[i] >= 50){
+        count411++;
+      }
+    }
+    System.out.println("50点以上の科目の数は：" + count411);
+    
+    // 4-12-1 DNAの記号をランダムに表示する
+    int[] seq = new int[10];
+      // 塩基配列をランダムに作成
+    for(int i = 0; i < seq.length; i++){
+      seq[i] = new java.util.Random().nextInt(4);
+    }
+      // 生成した塩基配列の記号を表示する
+    for(int i = 0; i < seq.length; i++){
+      switch (seq[i]){
+        case 0:
+          System.out.print("A ");
+          break;
+        case 1:
+          System.out.print("T ");
+          break;
+        case 2:
+          System.out.print("G ");
+          break;
+        case 3:
+          System.out.print("C ");
+          break;
+      }
+    }
+    
+    // 4-12-2 DNAの記号をランダムに表示する　省略
+    int[] seq412 = new int[10];
+      // 塩基配列をランダムに作成
+    for(int i = 0; i < seq412.length; i++){
+      seq412[i] = new java.util.Random().nextInt(4);
+    }
+      // 生成した塩基配列の記号を表示する
+    for(int i = 0; i < seq412.length; i++){
+      char[] base = {'A', 'T', 'G', 'C'};
+      System.out.print(base[seq412[i]] + " ");
+    }
+
+    // 4-13 従来for文
+    int[] scores413 = {20, 30, 40, 50, 80};
+    for (int i = 0; i < scores413.length; i++){
+      System.out.println(scores413[i]);
+    }
+    
+    // 4-14 拡張for文
+    int[] scores414 = {20, 30, 40, 50, 80};
+    for (int value : scores414){
+      System.out.println(value);
+    }
+    
   }
 }
