@@ -119,6 +119,69 @@ public class Demo4 {
     for (int value : scores414){
       System.out.println(value);
     }
-    
+
+    // 4-15 別の変数で配列内の値を変更
+    int[] arrayA = {1, 2, 3};
+    int[] arrayB;
+    arrayB = arrayA;  //AとBの参照する配列が同じになる
+    arrayB[0] = 100;  //AとBの参照している配列の値を変更
+    System.out.println(arrayA[0]);  //Aで取り出しても100となる
+
+    //4-16 ガベージコレクション
+    boolean judge = true;
+    if (judge == true){
+      int[] array416 = {1, 2, 3};
+    }
+
+    // 4-17 nullの利用(エラーコード)
+    // int[] array417 = {1, 2, 3};
+    // array417 = null;
+    // array417[0] = 10;
+
+    //4-18 二次元配列の利用
+    int[][] scores418 = new int[2][3];
+    scores418[0][0] = 40;
+    scores418[0][1] = 50;
+    scores418[0][2] = 60;
+    scores418[1][0] = 80;
+    scores418[1][1] = 60;
+    scores418[1][2] = 70;
+    System.out.println(scores418[1][1]);
+
+    //4-19 親配列と子配列の要素数を表示
+    int[][] scores419 = {{40, 50, 60}, {80, 60, 70}};
+    System.out.println(scores419.length);  //親配列
+    System.out.println(scores419[0].length);  //子配列
+
+    //練習問題4-1
+    // int[] points = new int[4];
+    // double[] weights = new double[5];
+    // boolean[] answers = new boolean[3];
+    // String[] names = new String[3];
+
+    //練習問題4-2
+    int[] moneyList = {121902, 8302, 55100};
+    for (int i = 0; i < moneyList.length; i++){
+      System.out.println(moneyList[i]);
+    }
+    for (int value : moneyList){
+      System.out.println(value);
+    }
+
+    //練習問題4-3
+    int[] count4 = null;
+    float[] heights4 = {171.3F, 175.0F};
+    System.out.println(count4[1]);  //NullPointerException
+    System.out.println(heights4[2]);  //ArrayIndexOutBoundsException
+
+    // 練習問題4-4
+    int[] numbers = {3, 4, 9};
+    System.out.println("一桁の数字を入力してください");
+    int input = new java.util.Scanner(System.in).nextInt();
+    for(int i = 0; i < numbers.length; i++){
+      if(numbers[i] == input){
+        System.out.println("アタリ～～！");
+      }
+    }
   }
 }
