@@ -1,4 +1,4 @@
-public class Demo {
+public class Demo1 {
 	public static void main(String[] args) {
 		System.out.println("sugar");
 		System.out.println("正体は角砂糖");
