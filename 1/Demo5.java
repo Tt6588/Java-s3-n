@@ -49,8 +49,32 @@ public class Demo4 {
     for(int i : array14){
       System.out.println(i);
     }
-  }
 
+    // 練習問題5-1
+    intoduceOneself();
+
+    // 練習問題5-2
+    String Title = "タイトル";
+    String Address = "アドレス";
+    String Text = "内容";
+    email(Title, Address, Text);
+    
+    // 練習問題5-3
+    email(Address, Text);
+    
+    // 練習問題5-4
+    double bottom = 10.0;
+    double height4 = 5.0;
+    double ans1 = calcTriangleArea(bottom, height4);
+    System.out.println("三角形の底辺の長さが" + bottom + "cm、高さが" + height4 + "cmの場合、面積は" + ans1 + "cm²");
+    
+    double radius = 5.0;
+    double ans2 = calcCircleArea(radius);
+    System.out.println("円の半径が" + radius + "cmの場合、面積は" + ans2 + "cm²");
+	}
+
+
+// ---main以外のメソッド---
   
   // 5-1 シンプルなメソッドの定義
   // public static void hello(){
@@ -140,5 +164,39 @@ public class Demo4 {
       newArray14[i] = i;
     }
     return newArray14;
+  }
+
+  // 練習5-1
+  public static void intoduceOneself(){
+    String name = "砂糖";
+    int age = 22;
+    double height = 171.0;
+    char zodiac = '兎';
+    System.out.println("私は" + name + "、" + age + "歳です。身長は" + height + "cmで干支は" + zodiac + "です。");
+  }
+  
+  // 練習5-2
+  public static void email(String Title, String Address, String Text){
+    System.out.println(Address + "に以下のメールを送信しました。");
+    System.out.println("件名:" + Title);
+    System.out.println("本文:" + Text);
+  }
+  
+  // 練習5-3
+  public static void email(String Address, String Text){
+    System.out.println(Address + "に以下のメールを送信しました。");
+    System.out.println("件名:無題");
+    System.out.println("本文:" + Text);
+  }
+  
+  // 練習5-4
+  public static double calcTriangleArea(double bottom, double height4){
+    double ans1 = bottom * height4 / 2;
+    return ans1;
+  }
+  public static double calcCircleArea(double radius){
+    double π = 3.14;
+    double ans2 = radius * radius * π;
+    return ans2;
   }
 }
