@@ -1,5 +1,5 @@
 // 6-6 パッケージ
-// package calcapp.logics;
+package calcapp.logics;
 
 public class Demo6CalcLogic{
   public static int tasu(int a, int b){
