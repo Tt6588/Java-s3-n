@@ -1,33 +1,33 @@
-// 8-2 heroã‚¯ãƒ©ã‚¹ã‚’javaã®ã‚³ãƒ¼ãƒ‰ã§è¡¨ã—ãŸã‚‚ã®
-// 8-3 ç©ºã®heroã‚¯ãƒ©ã‚¹
+// 8-2 heroƒNƒ‰ƒX‚ğjava‚ÌƒR[ƒh‚Å•\‚µ‚½‚à‚Ì
+// 8-3 ‹ó‚ÌheroƒNƒ‰ƒX
 
 public class Hero {
-  // 8-4 heroã‚¯ãƒ©ã‚¹ã«åå‰ã¨HPã‚’å¤‰æ•°ã¨ã—ã¦å®£è¨€
+  // 8-4 heroƒNƒ‰ƒX‚É–¼‘O‚ÆHP‚ğ•Ï”‚Æ‚µ‚ÄéŒ¾
   String name;
   int hp;
 
-  // 8-7 çœ ã‚‹æ“ä½œã«å«ã¾ã‚Œã‚‹è¦ç´ ã‚’è¨˜è¿°
+  // 8-7 –°‚é‘€ì‚ÉŠÜ‚Ü‚ê‚é—v‘f‚ğ‹Lq
   void sleep() {
     this.hp = 100;
-    System.out.println(this.name + "ã¯ã€çœ ã£ã¦å›å¾©ã—ãŸï¼");
+    System.out.println(this.name + "‚ÍA–°‚Á‚Ä‰ñ•œ‚µ‚½I");
   }
 
-  // 8-8 ãƒ¡ã‚½ãƒƒãƒ‰ã€Œåº§ã‚‹ã€ã€Œè»¢ã¶ã€ã€Œé€ƒã’ã‚‹ã€ã‚’è¿½åŠ 
+  // 8-8 ƒƒ\ƒbƒhuÀ‚évu“]‚Ôvu“¦‚°‚év‚ğ’Ç‰Á
   public void sit(int sec) {
     this.hp += sec;
-    System.out.println(this.name + "ã¯ã€" + sec + "ç§’åº§ã£ãŸï¼");
-    System.out.println("HPãŒ" + sec + "ãƒã‚¤ãƒ³ãƒˆå›å¾©ã—ãŸ");
+    System.out.println(this.name + "‚ÍA" + sec + "•bÀ‚Á‚½I");
+    System.out.println("HP‚ª" + sec + "ƒ|ƒCƒ“ƒg‰ñ•œ‚µ‚½");
   }
 
   public void slip() {
     this.hp -= 5;
-    System.out.println(this.name + "ã¯ã€è»¢ã‚“ã ï¼");
-    System.out.println("5ã®ãƒ€ãƒ¡ãƒ¼ã‚¸ï¼");
+    System.out.println(this.name + "‚ÍA“]‚ñ‚¾I");
+    System.out.println("5‚Ìƒ_ƒ[ƒWI");
   }
 
   public void run() {
-    System.out.println(this.name + "ã¯ã€é€ƒã’å‡ºã—ãŸï¼");
+    System.out.println(this.name + "‚ÍA“¦‚°o‚µ‚½I");
     System.out.println("GAMEOVER");
-    System.out.println("æœ€çµ‚HPã¯" + this.hp + "ã§ã—ãŸ");
+    System.out.println("ÅIHP‚Í" + this.hp + "‚Å‚µ‚½");
   }
 }

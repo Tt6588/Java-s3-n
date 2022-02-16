@@ -1,6 +1,6 @@
-// 8-5 フィールドを宣言すると同時に初期値も設定
+// 8-5 �t�B�[���h��錾����Ɠ����ɏ����l���ݒ�
 public class Matango {
   int hp;
-  // 8-6 フィールドを定数として宣言
+  // 8-6 �t�B�[���h��萔�Ƃ��Đ錾
   final int level = 10;
 }

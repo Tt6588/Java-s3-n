@@ -2,7 +2,7 @@ public class Main {
   // 8-1 mainメソッドを作る
   public static void main(String[] args) {
     // 8-9.10.11　勇者を作成
-    Hero h = new Hero;
+    Hero h = new Hero();
     // 8-12 勇者インスタンスを生成して初期値を代入
     h.name = "ミナト";
     h.hp = 100;
