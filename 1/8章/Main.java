@@ -7,10 +7,23 @@ public class Main {
     h.name = "ミナト";
     h.hp = 100;
     System.out.println("勇者" + h.name + "を生み出しました！");
-    // 8-12 仮想世界に勇者を生み出すプログラム
+    // 8-13 仮想世界に勇者を生み出すプログラム
     h.sit(5);
     h.slip();
     h.sit(25);
     h.run();
+
+    // 8-14 オブジェクト指向ではない方法で作成したプログラム
+    // int yusha_hp = 100;
+    // int matango1_hp = 50;
+    // int matango2_hp = 48;
+    // String yusha_name = "ミナト";
+    // int matango1_level = 10;
+    // int matango2_level = 10;
+    // System.out.println(yusha_name + "は5秒座った！");
+    // yusha_hp += 5;
+    // System.out.println("HPが5ポイント回復した");
+    // /* ： */
+    // /* ： */
   }
 }
